@@ -37,6 +37,7 @@ public enum UrlSignUtils {
         if (params == null || StringUtils.isEmpty(params.get("sign"))) return false;
         String sign = getSign(params);
         logger.info("verify Sign : {}", sign);
+        System.out.println("123445");
         return !StringUtils.isEmpty(sign) && params.get("sign").equals(sign);
     }
 
